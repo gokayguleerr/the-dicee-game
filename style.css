@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+  border: none;
+}
+
+html {
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #202c20;
+  color: #ffffff;
+}
+
+header div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header div h1 {
+  font-size: 8rem;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  color: #e4bf9c;
+  letter-spacing: .2rem;
+  margin-top: 4rem;
+}
+
+header div .line {
+  width: 700px;
+  height: 3px;
+  background-color: #e4bf9c;
+  margin-top: -1.6rem;
+  position: relative;
+  z-index: -1;
+}
+
+header div h3 {
+  font-size: 1.7rem;
+  margin-top: 6rem;
+  color: #e4bf9c;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#dicee-btn {
+  color: #e4bf9c;
+  background-color: transparent;
+  border: .1rem solid #e4bf9c;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: .8rem 1.7rem;
+  font-size: 2rem;
+  border-radius: .7rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+#dicee-btn:hover {
+  color: #202c20;
+  background-color: #e4bf9c;
+}
+
+#dicee-btn:active {
+  background-color: #836d58;
+}
+
+.dicee-box {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  align-items: center;
+  margin-top: 12rem;
+}
+
+.dicee-box > div {
+  display: flex;
+  justify-content: center;
+  gap: 12rem;
+}
+
+.dicee-box > div > img {
+  width: 160px;
+}
+
+.dicee-box > h2:first-child {
+  font-size: 4rem;
+  text-align: end;
+  color: #e4bf9c;
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: .2rem;
+  margin-right: 3rem;
+}
+
+.dicee-box > h2:last-child {
+  font-size: 4rem;
+  text-align: start;
+  color: #e4bf9c;
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: .2rem;
+  margin-left: 3rem;
+}
+
+#winner-place {
+  margin-top: 6rem;
+  height: 8rem;
+  line-height: 8rem;
+  text-align: center;
+}
+
+#winner-place, #the-winner, #win-text {
+  color: #e4bf9c;
+  font-size: 5.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#the-winner {
+  font-family: 'Pacifico', cursive;
+  letter-spacing: .3rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+}
+
+footer p {
+  font-family: 'Caveat', cursive;
+  color: #fff;
+  font-size: 2rem;
+}
